@@ -1,5 +1,8 @@
-import { Profile } from 'user/Profile';
-import user from '../user/user'
+import { Profile } from 'components/user/Profile';
+import user from '../data/user'
+import { Statistics } from 'components/statistics/Statistics';
+import data from '../data/data'
+
 export const App = () => {
   return (
     <div
@@ -13,6 +16,7 @@ export const App = () => {
       // }}
     >
       <Profile user={user} />
+      <Statistics stats={data} />
     </div>
   );
 };
