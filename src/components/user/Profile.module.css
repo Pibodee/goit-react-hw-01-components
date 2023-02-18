@@ -17,6 +17,7 @@
     height: 300px;
     border-radius: 50%;
     background-color: #fff;
+
 }
 
 .name{
@@ -37,6 +38,7 @@
     margin: 0;
     text-align: center;
     opacity: 50%;
+    margin-bottom: 15px;
 }
 
 .stats{

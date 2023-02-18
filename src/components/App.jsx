@@ -4,23 +4,17 @@ import { Statistics } from 'components/statistics/Statistics';
 import data from '../data/data'
 import { FriendList } from 'components/FriendList/FriendList';
 import friends from '../data/friends';
+import { TransactionTable } from './TransactionHistory/TransactionTable';
+import transactions from '../data/transactions';
 
 
 export const App = () => {
   return (
-    <div
-      // style={{
-      //   height: '100vh',
-      //   display: 'flex',
-      //   justifyContent: 'center',
-      //   alignItems: 'center',
-      //   fontSize: 40,
-      //   color: '#010101'
-      // }}
-    >
+    <div>
       <Profile user={user} />
       <Statistics stats={data} />
-      <FriendList friends={friends}/>
+      <FriendList friends={friends} />
+      <TransactionTable rows={transactions} />
     </div>
   );
 };
