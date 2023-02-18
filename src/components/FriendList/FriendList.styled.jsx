@@ -5,5 +5,8 @@ export const FriendsList = styled.ul`
     justify-content: space-between;
   display: flex;
   list-style: none;
-  background-color: teal;
+  width: 50vw;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
 `;
