@@ -29,11 +29,8 @@ export const Status = styled.span`
   ${({ online }) => {
     if (online === true) {
       return 'background-color: green;';
-    } else if (online === false) {
-      return 'background-color: red;';
-    } else {
-      return 'background-color: grey;';
-    }
+    } 
+    return 'background-color: red';
   }}
 `;
 

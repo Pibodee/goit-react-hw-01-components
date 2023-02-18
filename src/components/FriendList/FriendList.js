@@ -10,3 +10,12 @@ export const FriendList = ({ friends }) => {
         })}
     </FriendsList>)
 }
+
+
+FriendList.propTypes = {
+    friends: PropTypes.arrayOf(
+        PropTypes.shape({
+            id: PropTypes.number.isRequired
+        })
+    )
+}
