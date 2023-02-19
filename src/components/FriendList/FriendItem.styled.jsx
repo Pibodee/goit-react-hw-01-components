@@ -22,16 +22,13 @@ border-radius: 50%`
 
 export const Status = styled.span`
   display: block;
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    margin-right: auto;
-  ${({ online }) => {
-    if (online === true) {
-      return 'background-color: green;';
-    } 
-    return 'background-color: red';
-  }}
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin-right: auto;
+  background-color: ${({ online }) => {
+  return online === true ? 'green' : 'red'
+  }};
 `;
 
 export const Nickname = styled.p`
